@@ -11,7 +11,7 @@ namespace example
 		{
 			// Load skeleton
 			var readData = scope List<uint8>();
-			switch (File.ReadAll("../submodules/ozz-animation/media/bin/pab_skeleton.ozz ", readData)) {
+			switch (File.ReadAll("../submodules/ozz-animation/media/bin/pab_skeleton.ozz", readData)) {
 			case .Err(let err):
 				return 1;
 			default:
@@ -24,7 +24,7 @@ namespace example
 			Console.WriteLine(scope $"Skeleton loaded, SoaJointCount:{skeleton.SoaJointCount}, JointCount:{skeleton.JointCount}");
 			// Load animation 1
 			readData.Clear();
-			switch (File.ReadAll("../submodules/ozz-animation/media/bin/pab_run.ozz ", readData)) {
+			switch (File.ReadAll("../submodules/ozz-animation/media/bin/pab_run.ozz", readData)) {
 			case .Err(let err):
 				return 1;
 			default:
@@ -37,7 +37,7 @@ namespace example
 			Console.WriteLine(scope $"Animation1 loaded, Duration:{animation1.Duration}, Name:{animation1.Name}");
 			// Load animation 2
 			readData.Clear();
-			switch (File.ReadAll("../submodules/ozz-animation/media/bin/pab_jog.ozz ", readData)) {
+			switch (File.ReadAll("../submodules/ozz-animation/media/bin/pab_jog.ozz", readData)) {
 			case .Err(let err):
 				return 1;
 			default:
