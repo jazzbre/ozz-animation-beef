@@ -1,0 +1,5 @@
+FileVersion = 1
+Projects = {ozz-animation-beef = {Path = "."}, example = {Path = "example"}}
+
+[Workspace]
+StartupProject = "example"

@@ -1,0 +1,6 @@
+FileVersion = 1
+Dependencies = {corlib = "*", ozz-animation-beef = "*"}
+
+[Project]
+Name = "example"
+StartupObject = "example.Program"

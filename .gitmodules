@@ -1,0 +1,6 @@
+[submodule "submodules/bx"]
+	path = submodules/bx
+	url = https://github.com/bkaradzic/bx.git
+[submodule "submodules/ozz-animation"]
+	path = submodules/ozz-animation
+	url = https://github.com/guillaumeblanc/ozz-animation.git

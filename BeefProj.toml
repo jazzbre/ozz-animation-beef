@@ -1,0 +1,53 @@
+FileVersion = 1
+
+[Project]
+Name = "ozz-animation-beef"
+TargetType = "BeefLib"
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationDebug.lib"]
+OtherLinkFlags = "$(LinkFlags) comctl32.lib"
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationRelease.lib"]
+OtherLinkFlags = "$(LinkFlags) comctl32.lib"
+
+[Configs.Paranoid.Win64]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationRelease.lib"]
+OtherLinkFlags = "$(LinkFlags) comctl32.lib"
+
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationRelease.lib"]
+OtherLinkFlags = "$(LinkFlags) comctl32.lib"
+
+[Configs.Debug.macOS]
+LibPaths = ["$(ProjectDir)\\.build\\osx-x64\\bin\\libozz-animationDebug.a"]
+OtherLinkFlags = "$(LinkFlags) -framework AppKit"
+
+[Configs.Release.macOS]
+LibPaths = ["$(ProjectDir)\\.build\\osx-x64\\bin\\libozz-animationRelease.a"]
+OtherLinkFlags = "$(LinkFlags) -framework AppKit"
+
+[Configs.Paranoid.macOS]
+LibPaths = ["$(ProjectDir)\\.build\\osx-x64\\bin\\libozz-animationRelease.a"]
+OtherLinkFlags = "$(LinkFlags) -framework AppKit"
+
+[Configs.Test.macOS]
+LibPaths = ["$(ProjectDir)\\.build\\osx-x64\\bin\\libozz-animationRelease.a"]
+OtherLinkFlags = "$(LinkFlags) -framework AppKit"
+
+[Configs.Debug.Linux64]
+LibPaths = ["$(ProjectDir)\\.build\\linux64_gcc\\bin\\libozz-animationDebug.a"]
+OtherLinkFlags = "$(LinkFlags) -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0"
+
+[Configs.Release.Linux64]
+LibPaths = ["$(ProjectDir)\\.build\\linux64_gcc\\bin\\libozz-animationRelease.a"]
+OtherLinkFlags = "$(LinkFlags) -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0"
+
+[Configs.Paranoid.Linux64]
+LibPaths = ["$(ProjectDir)\\.build\\linux64_gcc\\bin\\libozz-animationRelease.a"]
+OtherLinkFlags = "$(LinkFlags) -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0"
+
+[Configs.Test.Linux64]
+LibPaths = ["$(ProjectDir)\\.build\\linux64_gcc\\bin\\libozz-animationRelease.a"]
+OtherLinkFlags = "$(LinkFlags) -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0"
