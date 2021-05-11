@@ -169,6 +169,16 @@ public:
     }
 
     ozz::span<ozz::math::SoaTransform> Run() {
+        if (activeLayers.size()) {
+            layers = {&activeLayers[0], activeLayers.size()};
+        } else {
+            layers = {};
+        }
+        if (activeAdditiveLayers.size()) {
+            additive_layers = {&activeAdditiveLayers[0], activeAdditiveLayers.size()};
+        } else {
+            additive_layers = {};
+        }
         auto result = ozz::animation::BlendingJob::Run();
         if (!result) {
             return {};
