@@ -5,19 +5,19 @@ Name = "ozz-animation-beef"
 TargetType = "BeefLib"
 
 [Configs.Debug.Win64]
-LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationDebug.lib"]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2022\\bin\\ozz-animationDebug.lib"]
 OtherLinkFlags = "$(LinkFlags) comctl32.lib"
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationRelease.lib"]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2022\\bin\\ozz-animationRelease.lib"]
 OtherLinkFlags = "$(LinkFlags) comctl32.lib"
 
 [Configs.Paranoid.Win64]
-LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationRelease.lib"]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2022\\bin\\ozz-animationRelease.lib"]
 OtherLinkFlags = "$(LinkFlags) comctl32.lib"
 
 [Configs.Test.Win64]
-LibPaths = ["$(ProjectDir)\\.build\\win64_vs2019\\bin\\ozz-animationRelease.lib"]
+LibPaths = ["$(ProjectDir)\\.build\\win64_vs2022\\bin\\ozz-animationRelease.lib"]
 OtherLinkFlags = "$(LinkFlags) comctl32.lib"
 
 [Configs.Debug.macOS]
